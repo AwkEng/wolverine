@@ -1075,8 +1075,6 @@ join pg_catalog.pg_namespace n on n.oid = c.relnamespace and n.nspname = '{Schem
         descriptor.Properties.Add(OptionsValue.Read(builder, x => x.NoResetOnClose));
         descriptor.Properties.Add(OptionsValue.Read(builder, x => x.Options!));
         descriptor.Properties.Add(OptionsValue.Read(builder, x => x.ArrayNullabilityMode));
-        descriptor.Properties.Add(OptionsValue.Read(builder, x => x.Multiplexing));
-        descriptor.Properties.Add(OptionsValue.Read(builder, x => x.WriteCoalescingBufferThresholdBytes));
         descriptor.Properties.Add(OptionsValue.Read(builder, x => x.LoadTableComposites));
         descriptor.Properties.Add(OptionsValue.Read(builder, x => x.ServerCompatibilityMode));
         descriptor.Properties.Add(OptionsValue.Read(builder, x => x.TrustServerCertificate));
